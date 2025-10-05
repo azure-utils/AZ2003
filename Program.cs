@@ -33,6 +33,7 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+app.MapGet("/", () => "Hello from Azure Container Apps!");
 
 app.Run();
 
